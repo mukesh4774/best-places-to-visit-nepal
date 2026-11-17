@@ -2,71 +2,445 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Best Places to Visit in Nepal for First-Time Travelers</title>
-    <meta name="description" content="Explore the best places to visit in Nepal, including Kathmandu, Pokhara, Chitwan and more. Discover travel tips and trip planning ideas.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Best Places to Visit in Nepal for First-Time Travelers</title>
+
+<meta name="description" content="Discover the best places to visit in Nepal for first-time travelers. Explore Kathmandu, Pokhara, Chitwan, Lumbini and useful travel planning tips.">
+
+<meta name="keywords" content="best places to visit in Nepal, Nepal travel guide, Nepal tourism, Nepal travel tips">
+
+<meta name="author" content="Nepal Travel Guide">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #172b4d;
+  background: #f5f8fc;
+  line-height: 1.8;
+}
+
+header {
+  background: white;
+  padding: 18px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 12px #00000012;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #0645a8;
+}
+
+.logo small {
+  display: block;
+  font-size: 11px;
+  color: #64748b;
+  font-weight: normal;
+}
+
+nav a {
+  text-decoration: none;
+  color: #17365d;
+  margin-left: 20px;
+  font-weight: 600;
+}
+
+.hero {
+  min-height: 390px;
+  background:
+  linear-gradient(90deg, #001b43cc, #001b4340),
+  url('images/nepal-hero.jpg') center/cover;
+  display: flex;
+  align-items: center;
+  padding: 50px 8%;
+  color: white;
+}
+
+.hero h1 {
+  font-size: clamp(32px, 5vw, 54px);
+  max-width: 760px;
+  line-height: 1.2;
+  margin: 15px 0;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 650px;
+}
+
+.tag {
+  background: #0866e9;
+  padding: 8px 16px;
+  border-radius: 25px;
+  display: inline-block;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+.article, .sidebar-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 3px 15px #00000008;
+}
+
+.article h2 {
+  color: #0645a8;
+  margin: 35px 0 12px;
+  line-height: 1.4;
+}
+
+.article h3 {
+  margin: 22px 0 8px;
+}
+
+.article p {
+  margin-bottom: 16px;
+  color: #40516a;
+}
+
+.article img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 15px 0;
+}
+
+.toc {
+  background: #eaf3ff;
+  border: 1px solid #c5dcff;
+  padding: 22px;
+  border-radius: 12px;
+  margin: 25px 0;
+}
+
+.toc h3 {
+  margin: 0 0 12px;
+}
+
+.toc a {
+  display: block;
+  color: #0755bd;
+  text-decoration: none;
+  padding: 4px 0;
+}
+
+.toc a:hover {
+  text-decoration: underline;
+}
+
+.sidebar-card {
+  margin-bottom: 20px;
+}
+
+.sidebar-card h3 {
+  color: #0645a8;
+  margin-bottom: 12px;
+}
+
+.sidebar-card a {
+  color: #0755bd;
+  text-decoration: none;
+}
+
+.cta {
+  background: linear-gradient(120deg, #0645a8, #0879dc);
+  color: white;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.cta a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 18px;
+  background: #ffcb36;
+  color: #102d50;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  background: #08264f;
+  color: white;
+  padding: 30px;
+  margin-top: 40px;
+}
+
+@media(max-width: 800px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav a {
+    margin: 5px;
+    font-size: 13px;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: 320px;
+  }
+
+  .article {
+    padding: 18px;
+  }
+}
+</style>
 </head>
+
 <body>
 
-<article>
+<header>
+  <div class="logo">
+    Nepal Travel Guide
+    <small>Explore • Experience • Enjoy</small>
+  </div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#destinations">Destinations</a>
+    <a href="#tips">Travel Tips</a>
+    <a href="#about">About</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div>
+    <span class="tag">Nepal Travel Guide</span>
     <h1>Best Places to Visit in Nepal for First-Time Travelers</h1>
+    <p>Discover beautiful destinations, Himalayan views, cultural experiences and helpful tips for planning your first Nepal trip.</p>
+  </div>
+</section>
 
-    <p>
-        Nepal is a beautiful travel destination known for its
-        Himalayan mountains, ancient temples, peaceful lakes,
-        and rich cultural heritage. Whether you enjoy adventure,
-        nature, or exploring local traditions, Nepal offers
-        something for every traveler.
-    </p>
+<div class="container">
 
-    <h2>1. Kathmandu – Explore Nepal's Culture</h2>
-    <p>
-        Kathmandu is the capital city of Nepal and a great place
-        to begin your journey. Visit Pashupatinath Temple,
-        Boudhanath Stupa, and Kathmandu Durbar Square to
-        experience the city's history and culture.
-    </p>
+<main class="article">
 
-    <h2>2. Pokhara – A Beautiful Lakeside Destination</h2>
-    <p>
-        Pokhara is famous for Phewa Lake, mountain views,
-        boating, and adventure activities. It is an excellent
-        destination for travelers looking for relaxation
-        and natural beauty.
-    </p>
+<p>
+Nepal is one of South Asia's most fascinating travel destinations. Known for the majestic Himalayas, ancient temples, peaceful lakes and welcoming communities, the country offers a memorable experience for different types of travelers. Whether you enjoy nature, adventure, history or cultural exploration, Nepal has plenty to discover.
+</p>
 
-    <h2>3. Chitwan – Wildlife and Nature</h2>
-    <p>
-        Chitwan is known for its national park and wildlife
-        experiences. Visitors can enjoy jungle safaris,
-        birdwatching, and exploring local culture.
-    </p>
+<p>
+For first-time visitors, choosing the right destinations can make a trip more enjoyable. Some places are ideal for understanding Nepalese culture, while others offer beautiful landscapes, wildlife experiences and peaceful surroundings. This guide explores some of the best places to visit in Nepal and shares practical ideas to help you plan your journey.
+</p>
 
-    <h2>4. Lumbini – A Spiritual Destination</h2>
-    <p>
-        Lumbini is the birthplace of Gautama Buddha.
-        It attracts visitors interested in Buddhist history,
-        spirituality, and peaceful surroundings.
-    </p>
+<div class="toc">
+<h3>Table of Contents</h3>
+<a href="#kathmandu">1. Kathmandu – Explore Nepal's Culture</a>
+<a href="#pokhara">2. Pokhara – A Beautiful Lakeside Destination</a>
+<a href="#chitwan">3. Chitwan – Wildlife and Nature</a>
+<a href="#lumbini">4. Lumbini – A Spiritual Destination</a>
+<a href="#best-time">5. Best Time to Visit Nepal</a>
+<a href="#tips">6. Useful Travel Tips for First-Time Visitors</a>
+<a href="#conclusion">7. Conclusion</a>
+</div>
 
-    <h2>Plan Your Nepal Trip</h2>
-    <p>
-        Planning a trip to Nepal becomes easier when you
-        understand the destinations, travel routes, and
-        experiences available. You can explore
-        <a href="https://happyouting.in/">Nepal Tour Packages</a>
-        to discover travel options for your next holiday.
-    </p>
+<section id="kathmandu">
+<h2>1. Kathmandu – Explore Nepal's Culture</h2>
 
-    <h2>Conclusion</h2>
-    <p>
-        Nepal offers a memorable combination of mountains,
-        culture, wildlife, and natural beauty. Kathmandu,
-        Pokhara, Chitwan, and Lumbini are excellent places
-        to include in a first-time Nepal itinerary.
-    </p>
-</article>
+<img src="images/kathmandu.jpg" alt="Traditional temples and cultural heritage in Kathmandu Nepal">
+
+<p>
+Kathmandu is the capital of Nepal and a wonderful starting point for a first visit. The city combines historic architecture, traditional markets, religious landmarks and modern attractions. Walking through its busy streets gives visitors an opportunity to experience everyday Nepalese life.
+</p>
+
+<p>
+Some popular attractions include Pashupatinath Temple, Boudhanath Stupa, Swayambhunath and Kathmandu Durbar Square. These places offer a glimpse into the country's religious traditions, craftsmanship and history. Visitors can also explore local markets, taste traditional food and purchase handmade souvenirs.
+</p>
+
+<p>
+Spend at least two days exploring Kathmandu if your schedule allows. A local guide can also help explain the history and cultural importance of the city's major landmarks.
+</p>
+</section>
+
+<section id="pokhara">
+<h2>2. Pokhara – A Beautiful Lakeside Destination</h2>
+
+<img src="images/pokhara.jpg" alt="Phewa Lake and Himalayan mountain views in Pokhara Nepal">
+
+<p>
+Pokhara is famous for its peaceful atmosphere, beautiful lakes and impressive mountain scenery. Located beside Phewa Lake, the city is a favorite destination for travelers who want to enjoy nature while taking a break from busy city life.
+</p>
+
+<p>
+Boating on Phewa Lake is a popular activity, especially when the weather is clear. Visitors can also explore the World Peace Pagoda, Davis Falls, Gupteshwor Cave and the lakeside area. On suitable days, the surrounding Himalayan peaks create spectacular views.
+</p>
+
+<p>
+Adventure lovers may also enjoy paragliding, trekking and other outdoor activities. Pokhara is a great place to spend two or three days, depending on your interests and travel schedule.
+</p>
+</section>
+
+<section id="chitwan">
+<h2>3. Chitwan – Wildlife and Nature</h2>
+
+<img src="images/chitwan.jpg" alt="Wildlife and natural landscape in Chitwan National Park Nepal">
+
+<p>
+Chitwan offers a different experience from Nepal's mountain destinations. The region is well known for Chitwan National Park, which is home to diverse wildlife, birds and natural habitats. It is an excellent destination for visitors interested in nature and conservation.
+</p>
+
+<p>
+Depending on available activities and park regulations, visitors can experience guided wildlife tours, birdwatching and cultural activities. The park is particularly known for its one-horned rhinoceros and other wildlife species.
+</p>
+
+<p>
+Travelers should choose authorized guides and follow park rules during wildlife activities. Spending one or two days in the region can add variety to a Nepal itinerary.
+</p>
+</section>
+
+<section id="lumbini">
+<h2>4. Lumbini – A Spiritual Destination</h2>
+
+<img src="images/lumbini.jpg" alt="Peaceful Buddhist monastery and heritage sites in Lumbini Nepal">
+
+<p>
+Lumbini is an important spiritual destination and is widely recognized as the birthplace of Gautama Buddha. Located in southern Nepal, it attracts visitors interested in Buddhist heritage, history and peaceful surroundings.
+</p>
+
+<p>
+The Maya Devi Temple is one of the most significant places in Lumbini. Visitors can also explore the sacred garden, monasteries built by different countries and other historical areas within the development zone.
+</p>
+
+<p>
+A visit to Lumbini is suitable for travelers who want to understand Nepal's spiritual heritage. Walking through the peaceful surroundings can also offer a relaxing break during a longer journey.
+</p>
+</section>
+
+<section id="best-time">
+<h2>5. Best Time to Visit Nepal</h2>
+
+<p>
+The best time to visit Nepal depends on the destinations and activities you have in mind. Spring, from March to May, is popular for comfortable weather, clear landscapes in many areas and blooming flowers. Autumn, from September to November, is another favorite season because many regions enjoy pleasant conditions and good mountain visibility.
+</p>
+
+<p>
+Winter can be suitable for visiting lower-altitude destinations such as Kathmandu, Pokhara and Chitwan, although mornings and evenings may be cold. The monsoon season, generally from June to August, brings rainfall that can affect road journeys, trekking routes and outdoor plans.
+</p>
+
+<p>
+Before traveling, check local weather forecasts and road conditions, especially if your itinerary includes mountain areas.
+</p>
+</section>
+
+<section id="tips">
+<h2>6. Useful Travel Tips for First-Time Visitors</h2>
+
+<h3>Plan Your Itinerary Carefully</h3>
+<p>
+Avoid including too many destinations in a short trip. Consider travel distances, road conditions and the amount of time you want to spend at each attraction. A balanced itinerary makes the journey more comfortable.
+</p>
+
+<h3>Carry Suitable Clothing</h3>
+<p>
+Weather conditions can vary significantly between different regions and elevations. Pack comfortable walking shoes, layers of clothing, rain protection when needed and warm clothes for cooler evenings.
+</p>
+
+<h3>Respect Local Culture</h3>
+<p>
+Nepal has diverse cultural and religious traditions. Dress respectfully when visiting temples and monasteries, ask permission before photographing people and follow local customs at religious sites.
+</p>
+
+<h3>Try Local Food</h3>
+<p>
+Food is an important part of the travel experience. Visitors can try popular dishes such as Dal Bhat, Momos and other local specialties. Choose clean and reliable places to eat and stay hydrated.
+</p>
+
+<h3>Keep Travel Documents Safe</h3>
+<p>
+Check current entry requirements, carry valid identification and keep important documents secure. Travel insurance and emergency contact details can also be useful during your journey.
+</p>
+
+<h3>Choose Reliable Travel Support</h3>
+<p>
+For a smoother trip, research accommodation, transportation and activities before departure. Compare available options and confirm important details with service providers.
+</p>
+
+</section>
+
+<section id="conclusion">
+<h2>7. Conclusion</h2>
+
+<p>
+Nepal offers an exciting combination of culture, nature, adventure and spirituality. Kathmandu introduces visitors to historic landmarks and traditional life, Pokhara provides relaxing lakeside experiences, Chitwan offers opportunities to explore wildlife, and Lumbini shares an important part of Buddhist heritage.
+</p>
+
+<p>
+First-time travelers can enjoy a rewarding experience by selecting destinations according to their interests, checking seasonal conditions and allowing enough time for each journey. With thoughtful planning, a trip to Nepal can become a memorable holiday filled with beautiful scenery, cultural discoveries and meaningful experiences.
+</p>
+
+</section>
+
+<div class="cta">
+<h2>Planning Your Nepal Holiday?</h2>
+<p>Explore travel options and start planning your next journey.</p>
+<a href="https://happyouting.in/" target="_blank" rel="noopener">
+Explore Nepal Tour Packages →
+</a>
+</div>
+
+</main>
+
+<aside>
+
+<div class="sidebar-card">
+<h3>Popular Destinations</h3>
+<p><a href="#kathmandu">Kathmandu – Culture and Temples</a></p>
+<hr>
+<p><a href="#pokhara">Pokhara – Lakes and Mountains</a></p>
+<hr>
+<p><a href="#chitwan">Chitwan – Wildlife</a></p>
+<hr>
+<p><a href="#lumbini">Lumbini – Spiritual Heritage</a></p>
+</div>
+
+<div class="sidebar-card">
+<h3>Travel Tips</h3>
+<p>✓ Check the weather before traveling.</p>
+<p>✓ Carry comfortable walking shoes.</p>
+<p>✓ Respect local traditions.</p>
+<p>✓ Keep important documents safe.</p>
+<p>✓ Plan enough time for road journeys.</p>
+</div>
+
+<div class="sidebar-card">
+<h3>About Nepal</h3>
+<p>Nepal is home to beautiful landscapes, rich cultural traditions and unforgettable travel experiences.</p>
+</div>
+
+</aside>
+</div>
+
+<footer>
+<p>© 2026 Nepal Travel Guide. All rights reserved.</p>
+<p>Explore Nepal • Experience Nepal • Enjoy Nepal</p>
+</footer>
 
 </body>
 </html>
