@@ -2,358 +2,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Travel Guides & Articles | HappyOuting</title>
+<title>Travel Stories & Destination Guides</title>
+<meta name="description" content="Explore inspiring travel guides for Meghalaya and Nepal. Discover destinations, trip planning ideas, itineraries and useful travel tips.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#102b35">
 
-  <meta name="description" content="Explore travel guides by HappyOuting covering Meghalaya trip planning and Nepal tour packages from Gorakhpur. Find destinations, itineraries and useful travel tips.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 
-  <meta name="robots" content="index, follow">
-
-  <meta property="og:title" content="Travel Guides & Articles | HappyOuting">
-  <meta property="og:description" content="Explore practical travel guides for Meghalaya and Nepal by HappyOuting.">
-  <meta property="og:type" content="website">
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f4f7fb;
-      color: #243247;
-      line-height: 1.7;
-    }
-
-    .topbar {
-      background: #102b46;
-      color: white;
-      padding: 18px 8%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
-    .logo {
-      font-size: 23px;
-      font-weight: 800;
-      letter-spacing: .3px;
-    }
-
-    .topbar a {
-      color: white;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    .hero {
-      background: linear-gradient(135deg, #103b59, #168b83);
-      color: white;
-      text-align: center;
-      padding: 75px 20px;
-    }
-
-    .hero .tag {
-      display: inline-block;
-      border: 1px solid rgba(255,255,255,.5);
-      border-radius: 30px;
-      padding: 5px 15px;
-      font-size: 13px;
-      margin-bottom: 18px;
-    }
-
-    .hero h1 {
-      font-size: clamp(30px, 5vw, 46px);
-      line-height: 1.2;
-      margin-bottom: 18px;
-    }
-
-    .hero p {
-      max-width: 680px;
-      margin: auto;
-      color: #e6f5f4;
-      font-size: 16px;
-    }
-
-    .container {
-      max-width: 1080px;
-      margin: 55px auto;
-      padding: 0 22px;
-    }
-
-    .section-heading {
-      text-align: center;
-      margin-bottom: 35px;
-    }
-
-    .section-heading h2 {
-      font-size: 29px;
-      color: #163b56;
-      margin-bottom: 8px;
-    }
-
-    .section-heading p {
-      color: #68788b;
-    }
-
-    .articles {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 26px;
-    }
-
-    .card {
-      background: white;
-      border-radius: 17px;
-      overflow: hidden;
-      border: 1px solid #e3eaf0;
-      box-shadow: 0 8px 28px rgba(23, 54, 78, .07);
-      transition: transform .25s ease, box-shadow .25s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 14px 32px rgba(23, 54, 78, .12);
-    }
-
-    .card-top {
-      padding: 28px;
-      color: white;
-    }
-
-    .meghalaya {
-      background: linear-gradient(135deg, #167b69, #63a77b);
-    }
-
-    .nepal {
-      background: linear-gradient(135deg, #254e82, #5989bd);
-    }
-
-    .category {
-      display: inline-block;
-      padding: 5px 12px;
-      background: rgba(255,255,255,.17);
-      border-radius: 30px;
-      font-size: 12px;
-      margin-bottom: 18px;
-    }
-
-    .card-top h2 {
-      font-size: 25px;
-      line-height: 1.35;
-    }
-
-    .card-body {
-      padding: 25px 28px 30px;
-    }
-
-    .card-body p {
-      color: #64748b;
-      font-size: 15px;
-      margin-bottom: 18px;
-    }
-
-    .topics {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 24px;
-    }
-
-    .topics span {
-      background: #edf4f7;
-      color: #31566b;
-      border-radius: 20px;
-      padding: 5px 11px;
-      font-size: 12px;
-    }
-
-    .read-btn {
-      display: inline-block;
-      background: #137e78;
-      color: white;
-      padding: 11px 20px;
-      border-radius: 7px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 14px;
-    }
-
-    .read-btn:hover {
-      background: #105f5b;
-    }
-
-    .about {
-      background: white;
-      border: 1px solid #e5ebf0;
-      border-radius: 15px;
-      padding: 32px;
-      margin-top: 42px;
-      text-align: center;
-    }
-
-    .about h2 {
-      color: #163b56;
-      margin-bottom: 12px;
-    }
-
-    .about p {
-      color: #64748b;
-      max-width: 750px;
-      margin: auto auto 18px;
-    }
-
-    .about a {
-      color: #087d75;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    footer {
-      background: #102b46;
-      color: #d6e1ea;
-      padding: 25px 15px;
-      text-align: center;
-      font-size: 14px;
-    }
-
-    footer a {
-      color: white;
-      text-decoration: none;
-    }
-
-    @media (max-width: 700px) {
-      .articles {
-        grid-template-columns: 1fr;
-      }
-
-      .hero {
-        padding: 55px 20px;
-      }
-
-      .topbar {
-        padding: 16px 22px;
-      }
-    }
-  </style>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'DM Sans',sans-serif;background:#f7f6f1;color:#34434a;line-height:1.7}
+.hero{
+min-height:500px;display:flex;align-items:center;justify-content:center;
+text-align:center;padding:75px 22px;color:white;
+background:linear-gradient(90deg,rgba(8,27,34,.78),rgba(8,27,34,.30)),
+url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2000&q=85") center/cover
+}
+.hero-content{max-width:800px}
+.eyebrow{color:#e4c69c;font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(42px,6vw,68px);line-height:1.15;margin:20px 0}
+.hero p{max-width:620px;margin:auto;color:#edf1ee}
+.hero-btn{display:inline-block;margin-top:30px;padding:13px 27px;background:#d3ad7c;color:#172c31;border-radius:4px;font-size:13px;font-weight:700}
+.intro{max-width:780px;margin:80px auto 45px;padding:0 22px;text-align:center}
+.intro .eyebrow{color:#a47e4d}
+.intro h2{font-family:'Playfair Display',serif;font-size:clamp(30px,4vw,43px);color:#102b35;line-height:1.25;margin:12px 0}
+.intro p{color:#77848a;font-size:15px}
+.articles{max-width:1120px;margin:auto;padding:0 22px 90px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px}
+.card{background:white;border-radius:9px;overflow:hidden;box-shadow:0 12px 38px rgba(18,43,53,.07);transition:.3s}
+.card:hover{transform:translateY(-7px);box-shadow:0 18px 45px rgba(18,43,53,.13)}
+.image-wrap{height:290px;overflow:hidden;position:relative;background:#dce6e1}
+.image-wrap img{width:100%;height:100%;object-fit:cover;display:block;transition:.6s}
+.card:hover img{transform:scale(1.06)}
+.image-label{position:absolute;bottom:18px;left:20px;background:rgba(12,34,39,.78);color:white;padding:7px 13px;font-size:11px;letter-spacing:1.5px}
+.content{padding:28px}
+.meta{font-size:11px;letter-spacing:1.7px;color:#ad8756;font-weight:700;margin-bottom:13px}
+.content h3{font-family:'Playfair Display',serif;font-size:27px;line-height:1.3;color:#102b35;margin-bottom:15px}
+.content p{font-size:14px;color:#77848a;margin-bottom:20px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:25px}
+.tags span{background:#f0f4ef;color:#526b5d;padding:5px 10px;font-size:11px;border-radius:3px}
+.read-link{display:inline-block;color:#936c3d;font-size:13px;font-weight:700;border-bottom:1px solid #c7a77e;padding-bottom:5px}
+footer{background:#0b2028;color:#b7c5c7;text-align:center;padding:27px 15px;font-size:13px}
+@media(max-width:760px){
+.articles{grid-template-columns:1fr;max-width:550px}
+.hero{min-height:430px}
+.image-wrap{height:250px}
+.intro{margin-top:60px}
+}
+</style>
 </head>
 
 <body>
 
-  <header class="topbar">
-    <div class="logo">HappyOuting</div>
-    <a href="https://www.happyouting.in/">Visit HappyOuting.in ↗</a>
-  </header>
+<main>
+<section class="hero">
+<div class="hero-content">
+<span class="eyebrow">DISCOVER • EXPLORE • EXPERIENCE</span>
+<h1>Explore the World, One Journey at a Time</h1>
+<p>Find travel inspiration, discover beautiful destinations and explore practical guides to plan your next memorable journey.</p>
+<a class="hero-btn" href="#travel-stories">EXPLORE TRAVEL STORIES ↓</a>
+</div>
+</section>
 
-  <section class="hero">
-    <span class="tag">TRAVEL • EXPLORE • DISCOVER</span>
-    <h1>Travel Guides & Inspiration</h1>
-    <p>
-      Discover useful travel information, destination guides,
-      holiday planning ideas and practical tips for your next journey.
-    </p>
-  </section>
+<section class="intro" id="travel-stories">
+<span class="eyebrow">THE TRAVEL JOURNAL</span>
+<h2>Explore Our Latest Travel Guides</h2>
+<p>From the green landscapes of Meghalaya to the majestic Himalayan destinations of Nepal, discover travel ideas and useful information for your next holiday.</p>
+</section>
 
-  <main class="container">
+<section class="articles">
 
-    <div class="section-heading">
-      <h2>Explore Our Latest Travel Articles</h2>
-      <p>Read our detailed travel guides and plan your next holiday with confidence.</p>
-    </div>
+<article class="card">
+<div class="image-wrap">
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1000&q=85" alt="Scenic green mountains and peaceful lake landscape" loading="lazy">
+<span class="image-label">MEGHALAYA • INDIA</span>
+</div>
+<div class="content">
+<div class="meta">DESTINATION GUIDE · MEGHALAYA</div>
+<h3>How to Plan the Perfect Meghalaya Trip</h3>
+<p>Discover Meghalaya's beautiful hills, waterfalls, scenic villages and natural attractions. Explore trip planning ideas, popular destinations, itineraries and useful travel tips.</p>
+<div class="tags">
+<span>Meghalaya</span><span>Shillong</span><span>Cherrapunji</span><span>Travel Tips</span>
+</div>
+<a class="read-link" href="https://medium.com/@mukeshhappyouting7/how-to-plan-the-perfect-meghalaya-trip-3ac0389444e6" target="_blank" rel="noopener noreferrer">READ FULL ARTICLE →</a>
+</div>
+</article>
 
-    <section class="articles">
+<article class="card">
+<div class="image-wrap">
+<img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=85" alt="Majestic Himalayan mountain peaks and landscape" loading="lazy">
+<span class="image-label">NEPAL • HIMALAYAS</span>
+</div>
+<div class="content">
+<div class="meta">TRAVEL GUIDE · NEPAL</div>
+<h3>Nepal Tour Packages from Gorakhpur: A Guide for First Time Travelers</h3>
+<p>Planning a Nepal holiday from Gorakhpur? Explore travel information about Kathmandu, Pokhara, Lumbini and practical tips for first-time visitors.</p>
+<div class="tags">
+<span>Nepal</span><span>Gorakhpur</span><span>Pokhara</span><span>Kathmandu</span>
+</div>
+<a class="read-link" href="https://medium.com/@mukeshhappyouting7/nepal-tour-packages-from-gorakhpur-a-guide-for-first-time-travelers-0e75b4145b4b" target="_blank" rel="noopener noreferrer">READ FULL ARTICLE →</a>
+</div>
+</article>
 
-      <!-- Meghalaya Article -->
-      <article class="card">
-        <div class="card-top meghalaya">
-          <span class="category">MEGHALAYA TRAVEL GUIDE</span>
-          <h2>How to Plan the Perfect Meghalaya Trip</h2>
-        </div>
+</section>
+</main>
 
-        <div class="card-body">
-          <p>
-            Explore Meghalaya's green hills, beautiful waterfalls,
-            clear rivers and peaceful villages. This guide covers
-            the best time to visit, popular destinations, suggested
-            itineraries, transport, accommodation and travel tips.
-          </p>
-
-          <div class="topics">
-            <span>Shillong</span>
-            <span>Cherrapunji</span>
-            <span>Dawki</span>
-            <span>Travel Planning</span>
-          </div>
-
-          <a class="read-btn"
-             href="https://medium.com/@mukeshhappyouting7/how-to-plan-the-perfect-meghalaya-trip-3ac0389444e6"
-             target="_blank"
-             rel="noopener noreferrer">
-            Read Full Article →
-          </a>
-        </div>
-      </article>
-
-      <!-- Nepal Article -->
-      <article class="card">
-        <div class="card-top nepal">
-          <span class="category">NEPAL TRAVEL GUIDE</span>
-          <h2>Nepal Tour Packages from Gorakhpur: A Guide for First Time Travelers</h2>
-        </div>
-
-        <div class="card-body">
-          <p>
-            Planning a Nepal trip from Gorakhpur? Explore helpful
-            information about Pokhara, Kathmandu and Lumbini,
-            travel duration, road journeys, documents, booking
-            considerations and practical travel tips.
-          </p>
-
-          <div class="topics">
-            <span>Nepal Tour Packages</span>
-            <span>Gorakhpur</span>
-            <span>Pokhara</span>
-            <span>Kathmandu</span>
-          </div>
-
-          <a class="read-btn"
-             href="https://medium.com/@mukeshhappyouting7/nepal-tour-packages-from-gorakhpur-a-guide-for-first-time-travelers-0e75b4145b4b"
-             target="_blank"
-             rel="noopener noreferrer">
-            Read Full Article →
-          </a>
-        </div>
-      </article>
-
-    </section>
-
-    <section class="about">
-      <h2>About HappyOuting</h2>
-      <p>
-        HappyOuting shares travel information and holiday planning
-        resources for travellers exploring beautiful destinations.
-        Discover travel ideas and explore available holiday options
-        through our website.
-      </p>
-      <a href="https://www.happyouting.in/">
-        Explore HappyOuting →
-      </a>
-    </section>
-
-  </main>
-
-  <footer>
-    <p>© 2026 HappyOuting. Travel Guides & Resources.</p>
-    <p>
-      <a href="https://www.happyouting.in/">HappyOuting.in</a>
-    </p>
-  </footer>
+<footer>
+<p>© 2026 Travel Stories & Destination Guides. All rights reserved.</p>
+<p>Discover destinations. Explore new journeys.</p>
+</footer>
 
 </body>
 </html>
